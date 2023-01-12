@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/routeone/static/css/main.246b527e.css",
+    "main.js": "/routeone/static/js/main.844475d8.js",
+    "static/js/787.5676bac2.chunk.js": "/routeone/static/js/787.5676bac2.chunk.js",
+    "index.html": "/routeone/index.html",
+    "main.246b527e.css.map": "/routeone/static/css/main.246b527e.css.map",
+    "main.844475d8.js.map": "/routeone/static/js/main.844475d8.js.map",
+    "787.5676bac2.chunk.js.map": "/routeone/static/js/787.5676bac2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.246b527e.css",
+    "static/js/main.844475d8.js"
+  ]
+}
