@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./Components/Home";
+import Contact from "./Components/Contact";
+import About from "./Components/About";
+import Product from "./Components/Product";
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container-fluid mt-3">
+        <div className="row ">
+          <Router>
+            <ul className="ul">
+              <li className="li">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="li">
+                <Link to="/contact">Contact</Link>
+              </li>
+              <li className="li">
+                <Link to="/product">Product</Link>
+              </li>
+              <li className="li">
+                <Link to="/about">About</Link>
+              </li>
+            </ul>
+            <Routes>
+              <Route excat path="/" element={<Home />}></Route>
+              <Route excat path="/contact" element={<Contact />}></Route>
+              <Route excat path="/product" element={<Product />}></Route>
+              <Route excat path="/about" element={<About />}></Route>
+            </Routes>
+          </Router>
+        </div>
+      </div>
+    </>
   );
 }
-
-export default App;
